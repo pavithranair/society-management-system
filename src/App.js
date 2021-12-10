@@ -6,11 +6,13 @@ import Login from './pages/Login/Login'
 import ContactUs from './pages/ContactUs/ContactUs'
 import Post from './pages/Post/Post'
 import Signup from './pages/Signup/Signup'
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="login" element={<Login />} />
